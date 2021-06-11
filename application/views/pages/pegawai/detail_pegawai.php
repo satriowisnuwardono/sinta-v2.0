@@ -309,9 +309,16 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
+                                                <?php foreach ($mutasi  as $m) : ?>
+                                                    <tr>
+                                                        <td><?= $m->jabatan_sebelum; ?></td>
+                                                        <td><?= $m->divisi_sebelum; ?></td>
+                                                        <td><?= $m->jabatan_sesudah; ?></td>
+                                                        <td><?= $m->divisi_sesudah; ?></td>
+                                                        <td><?= $m->tanggal_sk; ?></td>
+                                                        <td><?= $m->nomor_sk; ?></td>
+                                                    </tr>
+                                                <?php endforeach; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -338,9 +345,16 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
+                                                <?php foreach ($promosi  as $p) : ?>
+                                                    <tr>
+                                                        <td><?= $p->jabatan_sebelum; ?></td>
+                                                        <td><?= $p->divisi_sebelum; ?></td>
+                                                        <td><?= $p->jabatan_sesudah; ?></td>
+                                                        <td><?= $p->divisi_sesudah; ?></td>
+                                                        <td><?= $p->tanggal_sk; ?></td>
+                                                        <td><?= $p->nomor_sk; ?></td>
+                                                    </tr>
+                                                <?php endforeach; ?>
                                             </tbody>
                                         </table>
                                     </div>

@@ -162,6 +162,26 @@ class PegawaiModel extends CI_Model
         return $query->result();
     }
 
+    public function getMutasi($id_pegawai)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_mutasi');
+        $this->db->where('id_pegawai', $id_pegawai);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    public function getPromosi($id_pegawai)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_promosi');
+        $this->db->where('id_pegawai', $id_pegawai);
+
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     // GET BY SESSION
     public function getById_Session($id_pegawai)
     {

@@ -55,6 +55,8 @@ class Pegawai extends My_Controller
             'bpjs' => $this->PegawaiModel->getBpjs($id_pegawai),
             'masa_kerja' => $this->PegawaiModel->getMasaKerja($id_pegawai),
             'demosi' => $this->PegawaiModel->getDemosi($id_pegawai),
+            'mutasi' => $this->PegawaiModel->getMutasi($id_pegawai),
+            'promosi' => $this->PegawaiModel->getPromosi($id_pegawai),
         ];
 
         $this->render_backend('pages/pegawai/detail_pegawai', $data);
