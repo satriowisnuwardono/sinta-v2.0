@@ -127,6 +127,31 @@
                     </ul>
                 </li>
 
+                <!-- Master Penghargaan dan Pelanggaran -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-trophy"></i>
+                        <p>
+                            Master Penilaian
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item ml-4">
+                            <a href="<?= base_url('penghargaan'); ?>" class="nav-link">
+                                <i class="fas fa-medal nav-icon"></i>
+                                <p>Data Penghargaan</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ml-4">
+                            <a href="<?= base_url('pelanggaran') ?>" class="nav-link">
+                                <i class="fas fa-exclamation-triangle nav-icon"></i>
+                                <p>Data Pelanggaran</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
                 <!-- Master Gaji -->
                 <li class="nav-header">AKUNTANSI</li>
                 <li class="nav-item">
