@@ -152,6 +152,14 @@
                     </ul>
                 </li>
 
+                <!-- Pelatihan dan Sertifikat -->
+                <li class="nav-item">
+                    <a href="<?= base_url('pelatihan'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-certificate"></i>
+                        <p>Pelatihan & Sertifikat</p>
+                    </a>
+                </li>
+
                 <!-- Master Gaji -->
                 <li class="nav-header">AKUNTANSI</li>
                 <li class="nav-item">
